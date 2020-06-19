@@ -8,31 +8,71 @@
 
   <link rel="stylesheet" href="listTarefa.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" 
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 </head>
 
 <body> 
-  <div class="container-sm"></div>
-  <div class="barraTop">
-    <div id="barraP1">
-      <h6 id="pqUsar">PORQUER USAR LISTA DE TAREFAS?</h6>
-    </div>
-    <div id="barraP2">
-      <h6 id="comoUsar">COMO USAR:</h6>
-    </div>
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <a class="navbar-brand" href="#">Lista de Tarefas</a>
+  <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+      aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavId">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="Usar" 
+        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Por que  usar ?</a>
+        <div class="dropdown-menu" aria-labelledby="Usar">
+          <a class="dropdown-item" href="#">
+            Todos nós temos milhões de coisas pra fazer todos os dias.<br> 
+            Muitas vezes não sabemos por onde começar e nem como vamos dar <br> 
+            conta de tudo. É muito fácil ficar sobrecarregado com tudo que <br> 
+            precisamos concluir e acabamos esquecendo de fazer coisas <br> 
+            importantes. A lista de tarefas é uma excelente ferramenta<br> 
+            para te ajudar a alcançar seus objetivos.
+          </a>
+         
+        </div>
+      </li>
   </div>
-  <div class="container-sm2">
-    <h1>LISTA DE TAREFAS</h1>
-    <input type="text" size="40" id="textoTarefa" style="width: 334px;"> <br>
-    <button type="submit" id="botaoEnviar">Enviar</button>
-    <div id="divPai">
-  </div>
-  <footer>
-    <p> Criação para estudos...</p>
-  </footer>
+</nav>
+  <style>
+    /* Uma pequena estilização no content  */
+    .content{
+      border: 1px #eef solid;
+      box-shadow: 1px 4px 5px 2px #eef;
+      float:none;
+      margin:0 auto;
+    }
+  </style>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-6 col-md-offset-6 content" >
+    
+        <h4 class="text-center pb-2 mt-1">Escreva a sua tarefa !</h4>
+     
+     <div class="input-group pb-2">
+       <input class="form-control texto-da-tarefa" type="text"
+        name="" placeholder="Escreva a tarefa" aria-label="Escreva a tarefa " aria-describedby="texto">
+       <div class="input-group-append">
+         <span class="input-group-text Adicionar-tarefa" 
+         id="texto" style="cursor: pointer;">Adicionar</span>
+       </div>
+     </div>
+     <div class="tarefa-adicionada pb-2">
 
-  <script src="listTarefa.js"></script>
-  <script src="funcionalidadesExtras.js"></script>
+    </div>
+     </div>
+  </div>
+
+</div>
+  <script src="tasks.js"></script>
+  <!-- <script src="listTarefa.js"></script>
+  <script src="funcionalidadesExtras.js"></script> -->
 </body>
-
 </html>
